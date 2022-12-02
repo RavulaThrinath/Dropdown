@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>JavaScript Dates</h1>
+    <h2>The getDay() Method</h2>
+
+    <p>
+      The getDay() method returns the day of the week (from 0 to 6) of a date.
+    </p>
+    <p></p>
+    <input type="date" id="date-input" required />
+    <button id="submit">Submit</button>
+
+    <script>
+      (function () {
+        $("#submit").on("click", function () {
+          var date = new Date($("#date-input").val());
+          day = date.getDay();
+
+          if (day == 1) {
+            alert("monday");
+          }
+          if (day == 2) {
+            alert("tuesday");
+          } else {
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
